@@ -4,8 +4,8 @@
   "main": "dist/index.js",
   "license": "MIT",
   "files": [
-    "bin/*",
-    "dist/*",
+    "/bin/*",
+    "/dist/*",
     "README.md"
   ],
   "devDependencies": {
