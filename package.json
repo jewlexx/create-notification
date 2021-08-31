@@ -1,15 +1,21 @@
 {
   "name": "create-notification",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
+  "files": [
+    "bin/*",
+    "dist/*",
+    "README.md"
+  ],
   "devDependencies": {
     "@types/node": "^16.7.6",
     "@types/node-notifier": "^8.0.1",
+    "@vercel/ncc": "^0.30.0",
+    "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   },
   "dependencies": {
-    "@vercel/ncc": "^0.30.0",
     "commander": "^8.1.0",
     "dayjs": "^1.10.6",
     "node-notifier": "^10.0.0"
