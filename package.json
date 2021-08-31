@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "prepack": "ncc build ./src/index.ts -m --license LICENSE"
+    "prepack": "rimraf dist && ncc build ./src/index.ts -m --license LICENSE"
   },
   "devDependencies": {
     "@types/node": "^16.7.6",
