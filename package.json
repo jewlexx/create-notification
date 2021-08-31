@@ -3,15 +3,14 @@
   "version": "0.0.0",
   "main": "dist/index.js",
   "license": "MIT",
-  "files": [
-    "/bin/*",
-    "/dist/*",
-    "README.md"
-  ],
+  "scripts": {
+    "prepack": "ncc build ./src/index.ts -m --license LICENSE"
+  },
   "devDependencies": {
     "@types/node": "^16.7.6",
     "@types/node-notifier": "^8.0.1",
     "@vercel/ncc": "^0.30.0",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   },
@@ -19,5 +18,17 @@
     "commander": "^8.1.0",
     "dayjs": "^1.10.6",
     "node-notifier": "^10.0.0"
-  }
+  },
+  "files": [
+    "/bin/*",
+    "/dist/*",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "bin": {
+    "create-notification": "./bin/run"
+  },
+  "types": "out/index.d.ts"
 }
