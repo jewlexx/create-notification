@@ -1,5 +1,6 @@
 {
   "name": "create-notification",
+  "description": "Create a notification after the given amount of time with the given message",
   "version": "0.0.1",
   "main": "dist/index.js",
   "license": "MIT",
